@@ -1,0 +1,323 @@
+# Instincts generated from https://github.com/darkdream123/awesome-ai-apps
+# Generated: 2026-07-15T17:26:38.723Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: awesome-ai-apps-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/darkdream123/awesome-ai-apps
+---
+
+# Awesome Ai Apps Commit Length
+
+## Action
+
+Write moderate-length commit messages (~64 characters)
+
+## Evidence
+
+- Average commit message length: 64 chars
+- Based on 1 commits
+
+---
+id: awesome-ai-apps-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/darkdream123/awesome-ai-apps
+---
+
+# Awesome Ai Apps Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: awesome-ai-apps-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/darkdream123/awesome-ai-apps
+---
+
+# Awesome Ai Apps Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: awesome-ai-apps-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/darkdream123/awesome-ai-apps
+---
+
+# Awesome Ai Apps Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: awesome-ai-apps-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/darkdream123/awesome-ai-apps
+---
+
+# Awesome Ai Apps Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: awesome-ai-apps-workflow-update-npm-dependencies-multi-package
+trigger: "when doing update npm dependencies multi package"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/darkdream123/awesome-ai-apps
+---
+
+# Awesome Ai Apps Workflow Update Npm Dependencies Multi Package
+
+## Action
+
+Follow the update-npm-dependencies-multi-package workflow:
+1. Identify outdated dependencies in multiple package.json files.
+2. Update the version numbers in each package.json.
+3. Regenerate the corresponding lock files (package-lock.json, pnpm-lock.yaml, etc.).
+4. Commit all updated package.json and lock files together.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: **/package.json, **/package-lock.json, **/pnpm-lock.yaml
+
+---
+id: awesome-ai-apps-instinct-file-naming
+trigger: "When creating a new file in the codebase"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: darkdream123/awesome-ai-apps
+---
+
+# Awesome Ai Apps Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files: camelCase
+
+---
+id: awesome-ai-apps-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: darkdream123/awesome-ai-apps
+---
+
+# Awesome Ai Apps Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: awesome-ai-apps-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: darkdream123/awesome-ai-apps
+---
+
+# Awesome Ai Apps Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: awesome-ai-apps-instinct-constant-naming
+trigger: "When declaring a constant value"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: darkdream123/awesome-ai-apps
+---
+
+# Awesome Ai Apps Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: awesome-ai-apps-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: darkdream123/awesome-ai-apps
+---
+
+# Awesome Ai Apps Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: awesome-ai-apps-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: darkdream123/awesome-ai-apps
+---
+
+# Awesome Ai Apps Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: awesome-ai-apps-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: darkdream123/awesome-ai-apps
+---
+
+# Awesome Ai Apps Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source code
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: separate
+
+---
+id: awesome-ai-apps-instinct-git-commit-format
+trigger: "When writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: darkdream123/awesome-ai-apps
+---
+
+# Awesome Ai Apps Instinct Git Commit Format
+
+## Action
+
+Use a freeform commit message without a required prefix
+
+## Evidence
+
+- Pattern in commits.type: freeform
+- No prefixes detected in commit examples
+
+---
+id: awesome-ai-apps-instinct-git-commit-length
+trigger: "When composing a commit message"
+confidence: 0.5
+domain: git
+source: repo-analysis
+source_repo: darkdream123/awesome-ai-apps
+---
+
+# Awesome Ai Apps Instinct Git Commit Length
+
+## Action
+
+Keep commit messages concise, averaging around 64 characters
+
+## Evidence
+
+- Pattern in commits.averageLength: 64
+
+---
+id: awesome-ai-apps-instinct-update-npm-dependencies
+trigger: "When dependencies need to be updated across multiple packages"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: darkdream123/awesome-ai-apps
+---
+
+# Awesome Ai Apps Instinct Update Npm Dependencies
+
+## Action
+
+Update all relevant package.json and lock files together in a single commit
+
+## Evidence
+
+- Workflow: update-npm-dependencies-multi-package
+- Example commit: 'Bump the npm_and_yarn group across 4 directories with 13 updates'
+
